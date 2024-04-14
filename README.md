@@ -1,5 +1,3 @@
-#remote repo
-这是一个我用来练习git命令操作的远程仓库，学习记录如下：
 Git的配置
 1.配置用户名：git config --global user.name "您的用户名"
 
@@ -143,4 +141,32 @@ git pull，从远程仓库同步代码到本地仓库
 
 git push，从本地仓库同步代码到远程仓库
 
-git remote add origin repo-address：关联本地仓库和远程仓库·
+添加远程仓库的步骤：
+
+1.git remote add origin repo-address：关联本地仓库和远程仓库
+
+2.git push -u <远程仓库名> <分支名>
+
+分支
+git branch，查看仓库的所有分支
+
+git branch <分支名>，创建新的分支
+
+git checkout <分支名>，切换分支
+
+git switch <分支名>，切换分支，建议使用这个
+
+git merge <分支名>，合并分支到目标分支（当前所处的分支）
+
+git log --graph --oneline，查看分支图
+
+git branch -d <分支名>，删除已经合并的分支
+
+git branch -D <分支名>，删除分支，无论是否已经被合并
+
+git rebase <分支名>，变基合并吗，原理示例图如下：
+
+
+
+
+Rebase合并
